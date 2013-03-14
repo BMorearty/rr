@@ -21,11 +21,8 @@ do
   then
     if $force
     then
-      echo force
-      echo "~/.Trash/$filename"
-
-      rm -rf "~/.Trash/$filename"
+      rm -rf "$HOME/.Trash/$filename"
     fi
-    mv "$filename" "~/.Trash/$filename"
+    mv "$filename" "$HOME/.Trash/$filename"
   fi
 done
