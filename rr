@@ -17,12 +17,15 @@ fi
 
 for filename
 do
-  if [ -f "$filename" -o -d "$filename" ]
+  if [ -e "$filename" ]
   then
     if $force
     then
+      echo force
+      echo "~/.Trash/$filename"
+
       rm -rf "~/.Trash/$filename"
     fi
-    mv "$filename" ~/.Trash/
+    mv "$filename" "~/.Trash/$filename"
   fi
 done
