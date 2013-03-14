@@ -17,12 +17,12 @@ fi
 
 for filename
 do
-  if test $filename
+  if [ -f "$filename" -o -d "$filename" ]
   then
     if $force
     then
-      rm -rf ~/.Trash/$filename
+      rm -rf "~/.Trash/$filename"
     fi
-    mv $filename ~/.Trash/
+    mv "$filename" ~/.Trash/
   fi
 done
