@@ -14,7 +14,7 @@ Options:
 ## Installation
 
 ```sh
-curl https://raw.github.com/BMorearty/rr/master/rr >> /usr/local/bin/rr
+curl https://raw.githubusercontent.com/BMorearty/rr/master/rr >> /usr/local/bin/rr
 chmod +x /usr/local/bin/rr
 ```
 
